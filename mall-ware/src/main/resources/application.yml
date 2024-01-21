@@ -6,7 +6,13 @@ spring:
     url: jdbc:mysql://192.168.102.128:3306/gulimall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
-
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+  main:
+    allow-circular-references: true
+  application:
+    name: mall-ware
 
 mybatis-plus:
   mapperLocations: classpath:mapper/**/*.xml
